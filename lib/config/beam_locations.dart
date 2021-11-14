@@ -1,14 +1,14 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/screens/home.dart';
-import 'package:myapp/screens/profile/details_page.dart';
-import 'package:myapp/screens/profile/profile.dart';
-import 'package:myapp/screens/settings.dart';
+import 'package:myapp/modules/home/screens/home.dart';
+import 'package:myapp/modules/profile/screens/details_page.dart';
+import 'package:myapp/modules/profile/screens/profile.dart';
+import 'package:myapp/modules/todo/screens/todo.dart';
 
 class RouteLocationGenerator {
   static const String homeRoute = '/';
   static const String profileRoute = '/profile';
-  static const String settingsRoute = '/settings';
+  static const String todoRoute = '/todo';
 }
 
 //OPTION A: SIMPLE LOCATION BUILDER
@@ -28,10 +28,10 @@ class SimpleLocationGenerator {
         child: ProfilePage(),
         type: BeamPageType.noTransition,
       ),
-      '/settings' : (context, state) => BeamPage(
-        key: ValueKey('settings'),
-        title: 'Settings',
-        child: SettingsPage(),
+      '/todo' : (context, state) => BeamPage(
+        key: ValueKey('todo'),
+        title: 'Todo',
+        child: TodoPage(),
         type: BeamPageType.noTransition,
       ),
       '/profile/:username': (context, BeamState state) => BeamPage(

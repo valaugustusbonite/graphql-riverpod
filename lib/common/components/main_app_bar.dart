@@ -33,8 +33,8 @@ class CustomMainAppBar extends PreferredSize {
             routeName: RouteLocationGenerator.profileRoute,
           ),
           MenuButton(
-            text: 'Settings',
-            routeName: RouteLocationGenerator.settingsRoute,
+            text: 'Todo',
+            routeName: RouteLocationGenerator.todoRoute,
           ),
           SizedBox(width: 25),
         ],

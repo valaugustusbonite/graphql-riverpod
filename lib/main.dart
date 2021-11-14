@@ -8,7 +8,7 @@ void main() {
   setPathUrlStrategy();
   runApp(
     ProviderScope(
-      child: MyApp()
+      child: MyApp(),
     )
   );
 }

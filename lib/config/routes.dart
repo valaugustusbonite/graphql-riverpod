@@ -31,17 +31,17 @@ class RouteGenerator {
   // }
 
 
-  static Route<dynamic> _errorRoute() {
-    return MaterialPageRoute(builder: (context) => Scaffold(
-      appBar: AppBar(
-        title: Text('Error')
-      ),
-      body: Center(
-        child: Text('Page not found!'),
-      )
-     )
-    );
-  }
+  // static Route<dynamic> _errorRoute() {
+  //   return MaterialPageRoute(builder: (context) => Scaffold(
+  //     appBar: AppBar(
+  //       title: Text('Error')
+  //     ),
+  //     body: Center(
+  //       child: Text('Page not found!'),
+  //     )
+  //    )
+  //   );
+  // }
 }
 
 class RouteHandler extends StatelessWidget {

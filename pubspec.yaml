@@ -25,12 +25,14 @@ dependencies:
     sdk: flutter
 
   # State Management
-  flutter_riverpod: ^1.0.0-dev.5
-
+  flutter_hooks: ^0.18.0
+  hooks_riverpod: ^0.14.0+5
+  
   # Others
   url_strategy: ^0.2.0
   beamer: ^0.14.1
   graphql: ^5.0.0
+  
 
 
   # The following adds the Cupertino Icons font to your application.

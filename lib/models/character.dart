@@ -1,4 +1,4 @@
-class Character {
+class Character{
   String? _id;
   String? _name;
   String? _image;
